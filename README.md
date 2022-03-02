@@ -1,6 +1,6 @@
 # Blog
 
-Blog criado usando Jekyll e GitHub Pages
+[Blog](https://joaopedrocampos.github.io/) criado usando Jekyll e GitHub Pages
 
 ## Objetivo
 
