@@ -1,27 +1,40 @@
-# Minimal Mistakes remote theme starter
+# Blog
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Blog criado usando Jekyll e GitHub Pages
 
-Contains basic configuration to get you a site with:
+## Objetivo
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+O objetivo desse site é servir como um "diário" de todos os assuntos que estudar relacionados a engenharia de software em um geral, podendo conter posts de boas práticas de código até design de sistemas.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+O principal intuito é servir como um motivador para continuar estudando e para absorver conteúdo de forma mais clara pois para escrever um post sobre um determinado assunto o mesmo deve estar muito claro
 
----
+## Boas práticas
 
-## Troubleshooting
+Todo novo post deve ser criado a partir de um PR para garantir que o conteúdo do mesmo será devidamente revisado ~~vai ser revisado por mim, mas fazer o que ¯\\_(ツ)_/¯~~
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+## Estrutura do projeto
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+```bash
+--|
+  |__posts/ - Posts que devem ser publicados no blog
+  |__drafts/ - Posts que são Rascunhos (não serão publicados)
+  |__README.md
+  |__config.yml
+  |__assets/ - Arquivos estáticos, como imagens, para serem usados no blog
+```
+
+## Comandos úteis
+
+Para executar o blog localmente, evitando commitar conteúdos desnecessários, pode-se usar o seguinte comando:
+
+```bash
+$ bundle exec jekyll serve
+```
+
+Para executar o blog localmente e exibir os posts em draft pode-se usar o mesmo comando acima adicionando a flag `--drafts`:
+
+```bash
+$ bundle exec jekyll serve --drafts
+```
+
+Para mais informações sobre como usar o blog, ver a documentação oficial do [Jekyll](http://jekyllrb.com/docs/)
